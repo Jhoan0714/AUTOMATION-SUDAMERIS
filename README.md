@@ -7,6 +7,6 @@
 	•	La app que se automatizo fue  "Copy of selendroid-test-app.apk".  
 	•	A continuacion se visualiza la estructura del proyecto:
 	<p align="center">
-		<img width="343" height="508" src="https://github.com/Jhoan0714/AUTOMATION-SUDAMERIS/tree/master/APPSUDAMERIS/Estructura%20Proyecto.PNG">
+		<img width="343" height="508" src="https://github.com/Jhoan0714/AUTOMATION-SUDAMERIS/tree/master/APPSUDAMERIS/EstructuraProyecto.PNG">
 	</p>
 	
