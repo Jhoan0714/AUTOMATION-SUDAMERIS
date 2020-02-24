@@ -21,8 +21,9 @@
 	
 3. Se crear script de rendimiento en el cual se plantean dos escenarios para efecto de pruebas, ya que la API encontrada no soporta tanta carga:
  
-	-	Prueba de carga, que alcanza 1000 UVC con un ramp-up de 1800 segs, lo cual agregara masomenos 1 UVC por seg, la prueba tendria una duracion de aprox 40 min, esta prueba se podria tomar como una linea base o exploratorio ya que no tenemos una cantidad de transacciones max o min establecidas.  
-	-	Prueba de escalabilidad, en el cual se configuran los mismos 1000 UVC como tope final, pero cada 60 segs se agregan 30 UVC, manteniendolos por 600 segs (aprox 10 min), se toma este tiempo ya que la API de ejemplo, es un registro de producto, por lo cual en un escenario real podria llevarse este tiempo como maximo en que una persona realiza esta solicitud. Finalmente cada 10 segs finalizan 5 UVC, la prueba tendria una duracion de aprox 1 hora con 20 min.
+ 		- Prueba de carga, que alcanza 1000 UVC con un ramp-up de 1800 segs, lo cual agregara masomenos 1 UVC por seg, la prueba tendria una duracion de aprox 40 min, esta prueba se podria tomar como una linea base o exploratorio ya que no tenemos una cantidad de transacciones max o min establecidas.   
+		- Prueba de escalabilidad, en el cual se configuran los mismos 1000 UVC como tope final, pero cada 60 segs se agregan 30 UVC, manteniendolos por 600 segs (aprox 10 min), se toma este tiempo ya que la API de ejemplo, es un registro de producto, por lo cual en un escenario real podria llevarse este tiempo como maximo en que una persona realiza esta solicitud. Finalmente cada 10 segs finalizan 5 UVC, la prueba tendria una duracion de aprox 1 hora con 20 min.  
+
 	•	Escogi JMeter, ya que es la herramienta con la cual he podido realizar algunos test de carga, por otra parte comparandolo con WAPT, se tiene documentacion a la mano y una comunidad que lo respalda, tambien plugins que le permite ser mas completo.  
 	•	No se plantea carga de estress, ya que no contamos con un max o min de transacciones por segs esperadas. Tampoco se pueden evaluar performance counters ya que no tengo acceso por TCP/IP, SNMP, WMI o incluso ODBC, esto con el fin de obtener estadisticas del servidor de aplicaciones o base de datos.  
 	•	Para la ejecucion del script, se deben agregar datos al archivo "Data Jmeter.csv" que se encuentra en la raiz del proyecto.  
