@@ -1,0 +1,24 @@
+<suite name="Selendroid" parallel="tests" thread-count="2">
+	<test name="Device 1">
+		<parameter name="platformName" value="ANDROID" />
+		<parameter name="platformVersion" value="6.0"/>
+		<parameter name="deviceName" value="Lenovo PB2-670Y"/>
+		<parameter name="udid" value="62211522HG3169M00M2" />
+		<parameter name="app" value="Copy of selendroid-test-app.apk"/>
+		<parameter name="host" value="http://127.0.0.1:4723/wd/hub"/>
+        <classes>
+            <class name="com.gnb.sudameris.test.TestUserRegister" />
+        </classes>
+    </test>
+	<test name="Device 2">
+		<parameter name="platformName" value="ANDROID" />
+		<parameter name="platformVersion" value="6.0.1"/>
+		<parameter name="deviceName" value="Moto G (3ª generación)"/>
+		<parameter name="udid" value="ZY22365FXP" />
+		<parameter name="app" value="Copy of selendroid-test-app.apk"/>
+		<parameter name="host" value="http://127.0.0.1:4733/wd/hub"/>
+        <classes>
+            <class name="com.gnb.sudameris.test.TestWebView" />
+        </classes>
+    </test>
+</suite>

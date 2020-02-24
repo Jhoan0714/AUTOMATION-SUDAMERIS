@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Selendroid">
+              <span class="suite-name border-failed">Selendroid</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Selendroid">
+                    <span>C:\Users\Jhoan Lopez\Documents\NetBeansProjects\APPSUDAMERIS\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Selendroid">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Selendroid">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Selendroid">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Selendroid">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Selendroid">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Selendroid">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selendroid" class="hide-methods failed suite-Selendroid"> (hide)</a> <!-- hide-methods failed suite-Selendroid -->
+                      <a href="#" panel-name="suite-Selendroid" class="show-methods failed suite-Selendroid"> (show)</a> <!-- show-methods failed suite-Selendroid -->
+                    </span>
+                    <div class="method-list-content failed suite-Selendroid">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selendroid" title="com.gnb.sudameris.test.TestWebView" hash-for-method="formPage(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris)">formPage(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selendroid -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Selendroid" class="hide-methods passed suite-Selendroid"> (hide)</a> <!-- hide-methods passed suite-Selendroid -->
+                      <a href="#" panel-name="suite-Selendroid" class="show-methods passed suite-Selendroid"> (show)</a> <!-- show-methods passed suite-Selendroid -->
+                    </span>
+                    <div class="method-list-content passed suite-Selendroid">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selendroid" title="com.gnb.sudameris.test.TestWebView" hash-for-method="webView">webView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selendroid" title="com.gnb.sudameris.test.TestWebView" hash-for-method="welcome">welcome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Selendroid -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Selendroid" class="panel Selendroid">
+          <div class="suite-Selendroid-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.gnb.sudameris.test.TestWebView</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="formPage(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris)">
+                  </a> <!-- formPage(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris) -->
+                  <span class="method-name">formPage</span>
+                  <span class="parameters">(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[3]/android.webkit.WebView/android.webkit.WebView/android.view.View[7]/android.widget.EditText[2]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(&lt;generated&gt;)
+	at com.gnb.sudameris.selendroid.pages.chrome.FormPage.doFormPage(FormPage.java:76)
+	at com.gnb.sudameris.test.TestWebView.formPage(TestWebView.java:74)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5918f047 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 24 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-QOPOM1B&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\Jhoan Lopez\Docume..., appPackage: io.selendroid.testapp, databaseEnabled: false, desired: {app: C:\Users\Jhoan Lopez\Docume..., deviceName: Moto G (3ª generación), platformName: android, platformVersion: 6.0.1, udid: ZY22365FXP}, deviceApiLevel: 23, deviceManufacturer: motorola, deviceModel: MotoG3, deviceName: ZY22365FXP, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ZY22365FXP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 6.0.1, statBarHeight: 48, takesScreenshot: true, udid: ZY22365FXP, viewportRect: {height: 1136, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a9eb235-74ee-4e42-bd15-b68daf66938e
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[3]/android.webkit.WebView/android.webkit.WebView/android.view.View[7]/android.widget.EditText[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 26 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Form Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selendroid-class-failed -->
+          <div class="suite-Selendroid-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gnb.sudameris.test.TestWebView</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="webView">
+                  </a> <!-- webView -->
+                  <span class="method-name">webView</span>
+                  <em>
+(Select Web View)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="welcome">
+                  </a> <!-- welcome -->
+                  <span class="method-name">welcome</span>
+                  <em>
+(Open Web View)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selendroid-class-passed -->
+        </div> <!-- panel Selendroid -->
+        <div panel-name="test-xml-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Jhoan Lopez\Documents\NetBeansProjects\APPSUDAMERIS\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Selendroid&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Device 3&quot;&gt;
+    &lt;parameter name=&quot;app&quot; value=&quot;Copy of selendroid-test-app.apk&quot;/&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;6.0.1&quot;/&gt;
+    &lt;parameter name=&quot;host&quot; value=&quot;http://127.0.0.1:4723/wd/hub&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;ANDROID&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;ZY22365FXP&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Moto G (3ª generación)&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.gnb.sudameris.test.TestWebView&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Device 3 --&gt;
+&lt;/suite&gt; &lt;!-- Selendroid --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Selendroid</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Device 3 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Selendroid</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Selendroid</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Selendroid');
+function tableData_Selendroid() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'formPage')
+data.setCell(0, 2, 'com.gnb.sudameris.test.TestWebView')
+data.setCell(0, 3, 23837);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'webView')
+data.setCell(1, 2, 'com.gnb.sudameris.test.TestWebView')
+data.setCell(1, 3, 5121);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'welcome')
+data.setCell(2, 2, 'com.gnb.sudameris.test.TestWebView')
+data.setCell(2, 3, 1397);
+window.suiteTableData['Selendroid']= { tableData: data, tableDiv: 'times-div-Selendroid'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-Selendroid">
+              </div> <!-- times-div-Selendroid -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Selendroid</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Selendroid" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gnb.sudameris.test.TestWebView</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(ANDROID, 6.0.1, Moto G (3ª generación), ZY22365FXP, Copy of selendroid-test-app.apk, http://127.0.0....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">welcome</span>
+                <span class="method-start">33343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">webView</span>
+                <span class="method-start">34743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">formPage(daniela25@gmail.com,1,Daniela,Hernandez,Prueba Sudameris)</span>
+                <span class="method-start">39874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63713 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

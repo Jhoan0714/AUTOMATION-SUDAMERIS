@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Selendroid]" parallel="tests">
+  <test name="Device 3(failed)" parallel="tests">
+    <parameter name="app" value="Copy of selendroid-test-app.apk"/>
+    <parameter name="platformVersion" value="6.0.1"/>
+    <parameter name="host" value="http://127.0.0.1:4723/wd/hub"/>
+    <parameter name="platformName" value="ANDROID"/>
+    <parameter name="udid" value="ZY22365FXP"/>
+    <parameter name="deviceName" value="Moto G (3ª generación)"/>
+    <classes>
+      <class name="com.gnb.sudameris.test.TestWebView">
+        <methods>
+          <include name="formPage" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.gnb.sudameris.test.TestWebView -->
+    </classes>
+  </test> <!-- Device 3(failed) -->
+</suite> <!-- Failed suite [Selendroid] -->
